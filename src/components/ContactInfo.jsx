@@ -1,5 +1,7 @@
 import { Kanit, Lora} from 'next/font/google';
-    
+import Image from 'next/image';
+import googleMaps from '../../public/google-maps.jpg'
+
 const kanit = Kanit({
     weight: '600',
     subsets: ['latin'],
@@ -18,10 +20,14 @@ const ContactInfo = ({city, children}) => {
                 <h2 className={`${kanit.className} text-left text-4xl md:p-2`}>{city}</h2>
             </div>
             <div className="w-full md:w-1/4 md:pt-3">
-                <p className={`${lora.className} text-sm`}>{children}</p>
+                <addrres className={`${lora.className} text-sm`}>{children}</addrres>
             </div>
             <div className="w-full md:w-2/4">
-                <img src="https://www.enelsubte.com/wp-content/uploads/2016/01/google-maps-new-interface1.jpg" alt="Descripción de la imagen" className="w-full" />
+                <Image 
+                    src={googleMaps} 
+                    alt="Imagen de un lugar desde google maps" 
+                    className="w-full" 
+                />
             </div>
         </div>
      );

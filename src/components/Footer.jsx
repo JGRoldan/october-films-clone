@@ -30,7 +30,7 @@ const Footer = () => {
                     </a>
                 </div>
                 <p className="mt-8 text-base leading-6 text-center normal-case">
-                    OCTOBERFILMS CLONE by JGRDeveloper ❤
+                    OCTOBERFILMS CLONE by JGRDeveloper <span className='text-rose-600'>❤</span>
                 </p>
             </div>
         </footer>
